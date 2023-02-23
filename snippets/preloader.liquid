@@ -1,5 +1,7 @@
 
 
+{%if  request.page_type  == "index" %}
+
   <div class="preloader-wrapper  fade-in">
 
     <div class="preloader-logo">
@@ -16,7 +18,6 @@
     <div class="ring"></div>
     <div class="dot"></div>
   </div>
-
 
   </div>
 
@@ -191,6 +192,7 @@
 
 details[open] > .search-modal {
     transform: translateY(0%) !important;
+}
 </style>
 
 
@@ -205,3 +207,5 @@ details[open] > .search-modal {
 
 
 </script>
+
+{% endif %}
