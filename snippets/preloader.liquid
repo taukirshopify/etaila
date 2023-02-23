@@ -179,8 +179,18 @@
 
 
    
+   .drawer .drawer__inner {
+    transform: translate(250%);
+    transition: .90s all ease-in-out;
+}
+.search-modal {
+   opacity: 1 !important;
+    transform: translateY(-100%) !important;
+    transition: 1s all ease-in-out;
+}
 
-
+details[open] > .search-modal {
+    transform: translateY(0%) !important;
 </style>
 
 
