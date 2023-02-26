@@ -6,3 +6,8 @@
 .remove-text-decoration {
   text-decoration: none;
 }
+
+.footer__content-bottom-wrapper {
+    align-items: center;
+    justify-content: center;
+}
