@@ -9,6 +9,8 @@
 
 .footer__content-bottom {
     padding-top: 0 !important;
+  background-color:#000;
+  color: #fff;
 }
 
 .footer__content-bottom-wrapper {
