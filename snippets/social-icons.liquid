@@ -17,7 +17,7 @@
   {%- endif -%}
   {%- if settings.social_instagram_link2 != blank -%}
     <li class="list-social__item">
-      <a href="{{ settings.social_instagram_link2 }}" class="link list-social__link" >
+      <a href="{{ settings.social_instagram_link2 }}" class="link list-social__link remove-text-decoration" >
         {%- render 'icon-instagram' -%}&nbsp;&nbsp;@etai
         <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
       </a>
@@ -25,7 +25,7 @@
   {%- endif -%}
   {%- if settings.social_youtube_link != blank -%}
     <li class="list-social__item">
-      <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+      <a href="{{ settings.social_youtube_link }}" class="link list-social__link remove-text-decoration" >
         {%- render 'icon-youtube' -%}
         <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
       </a>
