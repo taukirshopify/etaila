@@ -2,3 +2,7 @@
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.remove-text-decoration {
+  text-decoration: none;
+}
