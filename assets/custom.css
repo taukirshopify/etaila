@@ -8,7 +8,7 @@
 }
 
 .footer__content-bottom {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 .footer__content-bottom-wrapper {
