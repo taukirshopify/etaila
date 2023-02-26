@@ -7,6 +7,11 @@
   text-decoration: none;
 }
 
+.copyright__content {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .footer__content-bottom {
   padding-top: 0 !important;
   padding-bottom: 12px;
