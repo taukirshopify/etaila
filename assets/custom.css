@@ -33,3 +33,7 @@
   font-weight: bold;
   font-size: 1.4rem !important;
 }
+
+.product__title>* {
+    text-transform: uppercase;
+}
