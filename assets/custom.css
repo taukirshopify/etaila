@@ -24,7 +24,8 @@
 }
 
 .full-unstyled-link {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .price {
