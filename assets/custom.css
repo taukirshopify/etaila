@@ -30,6 +30,6 @@
 
 .price {
   color: currentColor;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 1.4rem !important;
 }
