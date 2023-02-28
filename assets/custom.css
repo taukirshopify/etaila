@@ -57,3 +57,7 @@
 .slider-counter__link--numbers {
   font-size: 1rem;
 }
+
+.accordion__title {
+  font-weight: normal !important;
+}
