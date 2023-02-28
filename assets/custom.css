@@ -60,4 +60,5 @@
 
 .accordion__title {
   font-weight: normal !important;
+  text-transform: uppercase;
 }
