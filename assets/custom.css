@@ -49,6 +49,11 @@
     text-transform: uppercase;
 }
 
+.cart__empty-text {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 .slider-counter__link--numbers {
   font-size: 1rem;
 }
