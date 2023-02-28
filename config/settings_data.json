@@ -133,6 +133,7 @@
     "cart_drawer_collection": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
     "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
