@@ -46,3 +46,7 @@
 .cart-item__name {
     text-transform: uppercase;
 }
+
+.slider-counter__link--numbers {
+  font-size: 1rem;
+}
