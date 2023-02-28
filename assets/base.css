@@ -1331,7 +1331,9 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.5rem;
+  /* GS3 reduced font size and made uppercase */
+  text-transform: uppercase;
+  font-size: 1rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
