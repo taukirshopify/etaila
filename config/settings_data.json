@@ -134,6 +134,10 @@
     "checkout_logo_image": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
