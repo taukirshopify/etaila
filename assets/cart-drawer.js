@@ -36,7 +36,7 @@ class CartDrawer extends HTMLElement {
       trapFocus(containerToTrapFocusOn, focusElement);
     }, { once: true });
     console.log("this will running");
- document.getElementsByClassName("cart-drawer__empty-content").classList.add('fade-in');;
+ document.getElementsByClassName("cart-drawer__empty-content").classList.add("mystyle");
 
     document.body.classList.add('overflow-hidden');
   }

@@ -454,3 +454,86 @@
     });
   });
 </script>
+
+
+
+
+<style>
+.active .cart-drawer__empty-content
+   
+  {
+    animation-delay: 3s;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+
+  .cart-drawer__empty-content
+
+  {
+    color: #ffffff;
+    font-size: large;
+    font-family: helvetica;
+    text-align: center;
+    opacity: 0;
+      -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeout 4s; /* Firefox < 16 */
+          -ms-animation: fadeout 4s; /* Internet Explorer */
+           -o-animation: fadeout 4s; /* Opera < 12.1 */
+              animation: fadeout 4s;
+  }
+  
+  @keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+  }
+</style>
