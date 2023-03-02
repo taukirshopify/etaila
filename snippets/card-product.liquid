@@ -119,6 +119,19 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
+            {% if card_product.first_available_variant.inventory_quantity < 15 %}
+            
+              <span
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
+                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+              >
+                low in stock
+              </span>
+             
+            
+            {% endif %}
+  
+
             {%- if card_product.available == false -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -134,6 +147,32 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%}
+
+
+              {% comment %}Date calculate{% endcomment %}
+                {% assign date_pub_y = card_product.published_at | date:'%Y' %}
+                {% assign date_pub_d = card_product.published_at | date:'%j' %}
+                {% assign date_now_y = 'now' | date:'%Y' %}
+                {% assign date_now_d = 'now' | date:'%j' %}
+                {% assign dates_diff_y = date_now_y | minus: date_pub_y | times: 365 %}
+                {% assign dates_diff_d = date_now_d | minus: date_pub_d %}
+                {% assign dates_diff = dates_diff_y | plus: dates_diff_d %}
+                {% assign new_products_period = new_products_final | plus: 0 %} 
+
+                {% if dates_diff <= new_products_period %}
+
+
+                <span
+                  id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                >
+                NEW
+                </span>
+                {% endif %}
+
+
+
+
           </div>
         </div>
       </div>
@@ -316,6 +355,9 @@
           </div>
         {%- endif -%}
         <div class="card__badge {{ settings.badge_position }}">
+
+
+
           {%- if card_product.available == false -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -331,6 +373,10 @@
               {{- 'products.product.on_sale' | t -}}
             </span>
           {%- endif -%}
+
+
+
+
         </div>
       </div>
     </div>
@@ -358,6 +404,8 @@
             <h3 class="card__heading">
               <a role="link" aria-disabled="true" class="full-unstyled-link">
                 {{ 'onboarding.product_title' | t }}
+
+          
               </a>
             </h3>
           </div>
@@ -368,6 +416,7 @@
           <h3 class="card__heading{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
+              hello sir
             </a>
           </h3>
           <div class="card-information">
@@ -382,3 +431,25 @@
     </div>
   </div>
 {%- endif -%}
+
+
+
+<style>
+
+  .badge {
+    border: 1px solid transparent;
+    border-radius: var(--badge-corner-radius);
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    padding: 4px 6px 2px;
+    text-align: center;
+    background-color: rgb(var(--color-badge-background));
+    border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
+    color: rgb(var(--color-foreground));
+    word-break: break-word;
+}
+</style>
