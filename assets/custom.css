@@ -66,3 +66,7 @@
 .card__badge.top {
     margin-top: -8px;
 }
+
+.main-page-title {
+  text-transform: uppercase;
+}
