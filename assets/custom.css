@@ -62,3 +62,7 @@
   font-weight: normal !important;
   text-transform: uppercase;
 }
+
+.card__badge.top {
+    margin-top: -7px;
+}
