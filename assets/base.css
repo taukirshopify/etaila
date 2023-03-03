@@ -3027,3 +3027,23 @@ box-shadow: none;
 outline: 0;
 border-radius: var(--inputs-radius);
 }
+
+.fadeinout
+{
+  animation: fadeinout 4s infinite;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0;
+  }
+  50%
+  {
+    opacity:1;
+  }
+  100%
+  {
+    opacity:0;
+  }
+}

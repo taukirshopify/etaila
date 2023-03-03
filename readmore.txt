@@ -1,1 +1,4 @@
 et4i
+
+
+shopify theme dev --store=etai-la-clothing
