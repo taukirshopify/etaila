@@ -1,19 +1,76 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "disabled": true,
+    "81244801-f96b-4e44-875c-a4ebede26a62": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18087979057453__81244801-f96b-4e44-875c-a4ebede26a62-167817181930f58f85-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--18087979057453__81244801-f96b-4e44-875c-a4ebede26a62-167817181930f58f85-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "2a97d0f0-9391-4bbd-b6d5-de23786aff95": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_3.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18087979057453__81244801-f96b-4e44-875c-a4ebede26a62-167817181930f58f85-0",
+        "template--18087979057453__81244801-f96b-4e44-875c-a4ebede26a62-167817181930f58f85-1",
+        "2a97d0f0-9391-4bbd-b6d5-de23786aff95"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/etai-rockshot_1.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "featured_collection": {
@@ -45,7 +102,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "81244801-f96b-4e44-875c-a4ebede26a62",
     "featured_collection"
   ]
 }
