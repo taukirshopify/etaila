@@ -92,6 +92,60 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "b9f314b0-3f04-4ac9-99f2-f8223ddc1c25": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_6.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "15d58dec-efa2-40e3-a2a9-552278b52731": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_7.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "a04933a4-6634-4084-99bc-1e4364955b64": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ETAI_WIDE_8.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
@@ -99,7 +153,10 @@
         "template--18087979057453__81244801-f96b-4e44-875c-a4ebede26a62-167817181930f58f85-1",
         "2a97d0f0-9391-4bbd-b6d5-de23786aff95",
         "03c85a39-adcc-4ffc-8fcf-26f17b4e6b88",
-        "efe15f91-38fb-4084-b514-8cd590aff178"
+        "efe15f91-38fb-4084-b514-8cd590aff178",
+        "b9f314b0-3f04-4ac9-99f2-f8223ddc1c25",
+        "15d58dec-efa2-40e3-a2a9-552278b52731",
+        "a04933a4-6634-4084-99bc-1e4364955b64"
       ],
       "settings": {
         "layout": "grid",
