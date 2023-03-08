@@ -82,4 +82,6 @@
 
 .newsletter-form-holder {
   max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
