@@ -71,6 +71,10 @@
   text-transform: uppercase;
 }
 
-.product__info-container>*+*, .product-form__input input[type=radio]+label {
-  font-size: 1.3rem !important;
+.product__info-container>*+* {
+  font-size: 1.3rem;
+}
+
+.product-form__input input[type=radio]+label {
+  font-size: 1rem !important;
 }
