@@ -72,5 +72,5 @@
 }
 
 .product__info-container>*+*, .product-form__input input[type=radio]+label {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
 }
