@@ -79,3 +79,7 @@
 .product-form__input input[type=radio]+label {
   font-size: 1rem !important;
 }
+
+.newsletter-form-holder {
+  max-width: 450px;
+}
