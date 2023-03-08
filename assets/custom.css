@@ -70,3 +70,7 @@
 .main-page-title {
   text-transform: uppercase;
 }
+
+.product__info-container>*+* {
+  font-size: 1.3rem;
+}
