@@ -86,7 +86,7 @@
   margin-right: auto;
 }
 
-.customer>h1 {
+.customer>h1, .shopify-policy__title>h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
 }
