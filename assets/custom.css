@@ -86,7 +86,7 @@
   margin-right: auto;
 }
 
-#recover, #login {
+.customer>h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
 }
