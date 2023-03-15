@@ -10,7 +10,7 @@
     {% assign bss_product_collection = bss_product_collection | concat:delimeter %}
     {% assign bss_product_collection = bss_product_collection | concat:collection_id %}
 {% endfor %}
-{% unless bss_product_is_hide %} {% assign bss_login_from_date_22267 = 'Mon Mar 13 2023 14:00:00 GMT+0700 (Indochina Time)' | date: '%s' %} {% assign bss_login_to_date_22267 = 'Fri Mar 24 2023 14:00:00 GMT+0700 (Indochina Time)' | date: '%s' %} {% if bss_login_from_date_22267 < bss_login_to_day_date and bss_login_to_day_date < bss_login_to_date_22267 %} {% if true %} {% unless customer %} {% assign bss_product_is_hide = true %} {% assign bss_hide_product_redirect_page  = "" | strip %} {% assign bss_hide_product_redirect_type = 0 %} {% if bss_hide_product_redirect_type == 0 %} {% assign bss_hide_product_redirect_page  = "/" | strip %} {% endif %} {% if bss_hide_product_redirect_type == 2 %} {% assign bss_hide_product_redirect_page  = "" %} {% endif %} {% assign bss_hide_product_on_pages = "0,1,2,3" %} {% assign bss_product_is_hide = true %} {% if template.name == "product" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "index" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "collection" %}{% assign bss_product_is_hide = true %}{% endif %} {% if template.name == "search" %}{% assign bss_product_is_hide = true %}{% endif %} {% endunless %} {% endif %} {% endif %} {% endunless %}
+
 {% if bss_product_is_hide == true or bss_product_is_hide contains "true" %}
     {{ bss_hide_product_redirect_page }}
 {% endif %}
