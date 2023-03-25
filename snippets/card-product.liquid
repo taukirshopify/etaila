@@ -119,7 +119,7 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
-            {% if card_product.first_available_variant.inventory_quantity < 15 %}
+            {% comment %}{% if card_product.first_available_variant.inventory_quantity < 15 %}
             
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -129,7 +129,7 @@
               </span>
              
             
-            {% endif %}
+            {% endif %}{% endcomment %}
   
 
             {%- if card_product.available == false -%}
