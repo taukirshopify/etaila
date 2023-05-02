@@ -17,7 +17,7 @@
 "items":
 [
 {%- paginate collections by 1000 -%}
-{% for collection in collections %}
+{% for collection in collections %}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% assign bsshp = product | default: prod | default: item | default: recommendation %}{% assign collec = 0 %}{% if collection %}{% assign collec = collection %}{% elsif block.settings.collection %}{% assign collec = block.settings.collection %}{% else if section.settings.collection %}{% assign collec = section.settings.collection %}{% endif %}{% capture hide_product %}{% render 'bsscommerce-hide-product', product: bsshp, collection: collec %}{% endcapture %}{% if hide_product contains "true" %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
 {
 {%- if pageurl contains 'preview=1' -%}
   "all_products_count": {{ collection.all_products_count | json }},
@@ -54,7 +54,7 @@
 "items":
 [
 {%- paginate search.results by lim -%}
-{% for product in search.results %}
+{% for product in search.results %}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% assign bsshp = product | default: prod | default: item | default: recommendation %}{% assign collec = 0 %}{% if collection %}{% assign collec = collection %}{% elsif block.settings.collection %}{% assign collec = block.settings.collection %}{% else if section.settings.collection %}{% assign collec = section.settings.collection %}{% endif %}{% capture hide_product %}{% render 'bsscommerce-hide-product', product: bsshp, collection: collec %}{% endcapture %}{% if hide_product contains "true" %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
 {
 {%- if pageurl contains 'preview=1' or pageurl contains 'q=id' -%}
   "available": {{ product.available | json }},
