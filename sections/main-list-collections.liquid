@@ -26,7 +26,7 @@
       class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
       role="list"
     >
-      {%- for collection in collections -%}
+      {%- for collection in collections -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% assign bsshp = product | default: prod | default: item | default: recommendation %}{% assign collec = 0 %}{% if collection %}{% assign collec = collection %}{% elsif block.settings.collection %}{% assign collec = block.settings.collection %}{% else if section.settings.collection %}{% assign collec = section.settings.collection %}{% endif %}{% capture hide_product %}{% render 'bsscommerce-hide-product', product: bsshp, collection: collec %}{% endcapture %}{% if hide_product contains "true" %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
         <li class="collection-list__item grid__item">
           {% render 'card-collection',
             card_collection: collection,
