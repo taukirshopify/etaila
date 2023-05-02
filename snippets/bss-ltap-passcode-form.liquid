@@ -607,29 +607,28 @@
       ruleId = ruleId.slice(0, ruleId.indexOf("-"))
     }
 
-    let dataUsage = JSON.stringify({
-      domain: window.Shopify.shop,
-      passcode: passcodeElement.value,
-      pageUrl: pageUrl,
-      customerId: customerId,
-      ruleId: ruleId,
-      status: bssPwList.includes(passcodeElement.value) ? "Success" : "Fail"
-    });
-
-    fetch(url, {
-      method:"POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: dataUsage
-    }).then((dataReq) =>{
-      return dataReq.json()
-    }).then((data) =>{
-        console.log(data.message)
-    })
-    .catch((e) =>{ console.log("create usage history failure")})
-
-    if (passcodeElement.value !== "") {
+    if (passcodeElement.value && passcodeElement.value !== "") {
+      let dataUsage = JSON.stringify({
+        domain: window.Shopify.shop,
+        passcode: passcodeElement.value,
+        pageUrl: pageUrl,
+        customerId: customerId,
+        ruleId: ruleId,
+        status: bssPwList.includes(passcodeElement.value) ? "Success" : "Fail"
+      });
+  
+      fetch(url, {
+        method:"POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: dataUsage
+      }).then((dataReq) =>{
+        return dataReq.json()
+      }).then((data) =>{
+          console.log(data.message)
+      })
+      .catch((e) =>{ console.log("create usage history failure")});
       let formData = new FormData();
       formData.append(passcodeElement.name, passcodeElement.value);
       let xmlHttp = new XMLHttpRequest();
