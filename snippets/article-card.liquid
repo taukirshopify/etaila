@@ -49,7 +49,7 @@
               {% endif %}
             >
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              <img
+              <img loading="lazy"
                 srcset="
                   {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
