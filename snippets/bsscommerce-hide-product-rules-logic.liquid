@@ -10,5 +10,11 @@
     {% assign bss_product_collection = bss_product_collection | concat:delimeter %}
     {% assign bss_product_collection = bss_product_collection | concat:collection_id %}
 {% endfor %}
-
+{% if collec_id_custom %}
+    {% assign collection_id_custom = collec_id_custom | split: ',' %}
+    {% assign bss_product_collection = bss_product_collection | concat: collection_id_custom %}
+{% endif %}
+{% unless content_for_header contains "Shopify.designMode" or content_for_header contains "previewBarInjector.init()" %}
+    
+{% endunless %}
 {{ bss_product_is_hide }}
