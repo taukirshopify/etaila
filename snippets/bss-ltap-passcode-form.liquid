@@ -625,7 +625,7 @@
       passcodeElement.classList.remove("input--error");
     });
 
-    if (passcodeElement.value && passcodeElement.value !== "") {
+    if (passcodeElement.value && passcodeElement.value !== "" && passcodeElement.value.length <= 255) {
       let dataUsage = JSON.stringify({
         domain: "{{ shop.permanent_domain }}",
         passcode: passcodeElement.value,
