@@ -2,12 +2,11 @@
   "sections": {
     "058b2f9f-77c3-435f-ba1c-0c693bb9d9a1": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/ETAI_V1_Thumbnail.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=3-cDAy2bQWc&pp=ygUIZXRhaSAwMDE%3D",
+        "cover_image": "shopify:\/\/shop_images\/5Z1A6079-2.png",
+        "video_url": "https:\/\/youtu.be\/FB26XSWHR88",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -40,6 +39,7 @@
       "block_order": [
         "00cbf1ba-e8e6-4b8c-94be-b65ebd577c0c"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
