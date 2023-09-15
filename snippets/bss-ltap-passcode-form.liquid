@@ -555,7 +555,36 @@
   let formData = new FormData();
   formData.append(passcodeElement.name, passcodeElement.value);
 
-
+  function skipCacheWhenReloadPage() {
+    function retry() {
+      setTimeout(function() {
+        let href = window.location.href;
+        if(window.location.search) {
+          href += `&no_cache_timestamp=${new Date().getTime()}`;
+        } else {
+          href += `?no_cache_timestamp=${new Date().getTime()}`;
+        }
+        window.location = href;
+      }, 2000);
+    }
+    try {
+      fetch(window.location.href, {
+        headers: {
+          "Pragma": "no-cache",
+          "Expires": -1,
+          "Cache-Control": "no-cache"
+        }
+      }).then(function () {
+        setTimeout(function(){
+          window.location.reload(true);
+        }, 1000)
+      }).catch(function () {
+        retry();
+      });
+    } catch (e) {
+      retry();
+    }
+  }
   if(passcodeElement){
     let togglePasscodeBtn = document.querySelector(".toggle-passcode-input");
     if(togglePasscodeBtn){
@@ -655,7 +684,7 @@
         if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
           // fix for sergio-987 by Xuan Hoang
           if (skipDomains.indexOf(window.Shopify.shop) === -1) {
-            window.location.reload();
+            skipCacheWhenReloadPage();
           }
         }
       };
