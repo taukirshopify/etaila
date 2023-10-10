@@ -183,7 +183,6 @@
               {{ block.settings.custom_liquid }}
             
             {%- when 'collapsible_tab' -%}
-            <div>
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
@@ -201,6 +200,8 @@
                   </div>
                 </details>
               </div>
+            <div></div>
+                          
                {% case product.metafields.custom.additional_note %}
   {% when '' %}
     <!-- Code to handle when additional_note is empty or blank -->
@@ -209,8 +210,6 @@
       {{ product.metafields.custom.additional_note }}
     </div>
 {% endcase %}
-            </div>
-
                          
             {%- when 'quantity_selector' -%}
               <div
