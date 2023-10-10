@@ -169,14 +169,7 @@
                 </div>
               {%- endif -%}
             
-            {% case product.metafields.custom.additional_note %}
-  {% when '' %}
-    <!-- Code to handle when additional_note is empty or blank -->
-  {% else %}
-    <div class="product__description rte quick-add-hidden">
-      {{ product.metafields.custom.additional_note }}
-    </div>
-{% endcase %}
+            
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -207,6 +200,15 @@
                   </div>
                 </details>
               </div>
+
+                          {% case product.metafields.custom.additional_note %}
+  {% when '' %}
+    <!-- Code to handle when additional_note is empty or blank -->
+  {% else %}
+    <div class="product__description rte quick-add-hidden">
+      {{ product.metafields.custom.additional_note }}
+    </div>
+{% endcase %}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
