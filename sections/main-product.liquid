@@ -168,6 +168,15 @@
                   {{ product.description | replace: '<img src=', '<img src=' }}
                 </div>
               {%- endif -%}
+            
+            {% case product.metafields.custom.additional_note %}
+  {% when '' %}
+    <!-- Code to handle when additional_note is empty or blank -->
+  {% else %}
+    <div class="product__description rte quick-add-hidden">
+      {{ product.metafields.custom.additional_note }}
+    </div>
+{% endcase %}
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -180,14 +189,6 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             
-            {% case product.metafields.custom.additional_note %}
-  {% when '' %}
-    <!-- Code to handle when additional_note is empty or blank -->
-  {% else %}
-    <div class="product__description rte quick-add-hidden">
-      {{ product.metafields.custom.additional_note }}
-    </div>
-{% endcase %}
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
