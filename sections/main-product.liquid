@@ -197,11 +197,7 @@
                   </div>
                 </details>
               </div>
-            {% if product.metafields.custom.additional_note != blank %}
-              <div class="product__description rte quick-add-hidden">
-                {{ product.metafields.custom.additional_note }}
-            </div>
-              {% endif %}
+            
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -288,6 +284,11 @@
                   {%- endif -%}
                 </div>
               </div>
+            {% if product.metafields.custom.additional_note != blank %}
+              <div class="product__description rte quick-add-hidden">
+                {{ product.metafields.custom.additional_note }}
+            </div>
+              {% endif %}
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
