@@ -42,6 +42,7 @@
         "description": {
           "type": "description",
           "settings": {
+            "additional_note": "This is just a test"
           }
         },
         "share": {
