@@ -200,16 +200,7 @@
                   </div>
                 </details>
               </div>
-            <div></div>
-                          
-               {% case product.metafields.custom.additional_note %}
-  {% when '' %}
-    <!-- Code to handle when additional_note is empty or blank -->
-  {% else %}
-    <div class="product__description rte quick-add-hidden addtl">
-      {{ product.metafields.custom.additional_note }}
-    </div>
-{% endcase %}
+            
                          
             {%- when 'quantity_selector' -%}
               <div
