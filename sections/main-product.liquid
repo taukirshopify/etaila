@@ -197,12 +197,12 @@
                   </div>
                 </details>
               </div>
-            {%- when 'addtl_note' -%}
-              {%- if product.addtl_note != blank -%}
+            {%- when 't:sections.main-product.blocks.description.name' -%}
+              {%- if block.settings.additional_note != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                  {{ product.addtl_note | replace: '<img src=', '<img src=' }}
-                </div>
-              {%- endif -%}
+              {{ block.settings.additional_note | replace: '<img src=', '<img src=' | escape }}
+            </div>
+            {%- endif -%}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
