@@ -197,14 +197,6 @@
                   </div>
                 </details>
               </div>
-            {% case product.metafields.custom.additional_note %}
-  {% when '' %}
-    <!-- Code to handle when additional_note is empty or blank -->
-  {% else %}
-    <div class="product__description rte quick-add-hidden">
-      {{ product.metafields.custom.additional_note }}
-    </div>
-{% endcase %}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -292,6 +284,14 @@
                 </div>
               </div>
             
+            {% case product.metafields.custom.additional_note %}
+  {% when '' %}
+    <!-- Code to handle when additional_note is empty or blank -->
+  {% else %}
+    <div class="product__description rte quick-add-hidden">
+      {{ product.metafields.custom.additional_note }}
+    </div>
+{% endcase %}
             {%- when 'popup' -%}
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
