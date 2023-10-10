@@ -69,9 +69,13 @@
             "page": ""
           }
         },
-        "35727ef9-3ac5-4fbe-8b8b-c3775f0e73b6": {
-          "type": "paragraph",
+        "1bb9d5b1-2b8b-452d-b802-20cd891618f6": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "Additional Note",
+            "icon": "clipboard",
+            "content": "<p>{{ product.metafields.custom.additional_note | metafield_tag }}<\/p>",
+            "page": ""
           }
         }
       },
@@ -86,7 +90,7 @@
         "share",
         "84fef0b6-489e-4cdf-a833-cd1c38695ded",
         "6e5e3dbc-6985-4931-b2b7-59b23ce2d96d",
-        "35727ef9-3ac5-4fbe-8b8b-c3775f0e73b6"
+        "1bb9d5b1-2b8b-452d-b802-20cd891618f6"
       ],
       "settings": {
         "enable_sticky_info": true,
