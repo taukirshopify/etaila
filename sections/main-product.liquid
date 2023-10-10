@@ -197,6 +197,7 @@
                   </div>
                 </details>
               </div>
+            {%- when 'additional_note' -%}
             {% if product.metafields.custom.additional_note != blank %}
               <div class="product__description rte quick-add-hidden">
                 {{ product.metafields.custom.additional_note }}
@@ -745,7 +746,7 @@
       "limit": 1
     },
     {
-      "type": "paragraph",
+      "type": "additional_note",
       "name": "Additional Note",
       "limit": 1
     },
