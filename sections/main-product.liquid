@@ -197,7 +197,12 @@
                   </div>
                 </details>
               </div>
-            
+            {%- when 'additional_note' -%}
+            {% if product.metafields.custom.additional_note != blank %}
+              <div class="product__description rte quick-add-hidden">
+                {{ product.metafields.custom.additional_note }}
+            </div>
+              {% endif %}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -738,15 +743,12 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1,
-  "settings": [
+      "limit": 1
+    },
     {
-      "type": "text",
-      "label": "Additional Note",
-      "id": "additional_note",
-      "info": "Add any additional notes here."
-    }
-  ]
+      "type": "paragraph",
+      "name": "Additional Note",
+      "limit": 1
     },
     {
       "type": "share",
