@@ -72,7 +72,7 @@
         "1bb9d5b1-2b8b-452d-b802-20cd891618f6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Additional Note",
+            "heading": "More Details",
             "icon": "clipboard",
             "content": "<p>{{ product.metafields.custom.additional_note | metafield_tag }}<\/p>",
             "page": ""
