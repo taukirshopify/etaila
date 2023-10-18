@@ -27,7 +27,7 @@
       "settings": {
         "color_scheme": "background-1",
         "logo_position": "middle-center",
-        "menu": "main-menu",
+        "menu": "main-menu-mega",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
