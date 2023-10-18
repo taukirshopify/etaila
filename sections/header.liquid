@@ -27,6 +27,76 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+
+  .mega-menu__content {
+      display: flex;
+      padding: 0;
+  }
+  
+  .mega-menu__list {
+      width: 40%;
+      flex: 0 0 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      position: relative;
+      padding: 20px;
+  }
+  
+  .mega-menu__content img {
+      width: 60%;
+      flex: 0 0 60%;
+  }
+  li.have-child {
+      display: flex;
+  }
+  
+  li.have-child a {
+      width: 50%;
+      margin-bottom: 0 !important;
+  }
+  
+  li.have-child ul {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 20px;
+      height: 100%;
+      border-left: 1px solid #0000001c;
+      display: none;
+  }
+  li.have-child:hover ul {
+      display: block;
+  }
+  .header__inline-menu {
+      height: 100%;
+  }
+  .list-menu--inline {
+    height: 100%;
+}
+  
+  .list-menu--inline>li {
+      display: flex;
+      height: 100%;
+      align-items: center;
+  }
+  
+  header-menu {
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+  
+  summary.list-menu__item {
+      height: 100%;
+  }
+  
+  .mega-menu {
+      height: 100%;
+  }
+
+  
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -487,10 +557,11 @@
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                         {% render 'icon-caret' %}
                       </summary>
-                      <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1">
+                      <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content gradient motion-reduce global-settings-popup" tabindex="-1" onmouseover="jackMousein(this)" onmouseleave="jackMouseout(this)"
+>
                         <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
-                            <li>
+                            <li class="{%- if childlink.links != blank -%}have-child{% endif %}">
                               <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                 {{ childlink.title | escape }}
                               </a>
@@ -508,9 +579,15 @@
                             </li>
                           {%- endfor -%}
                         </ul>
+
+                        {% if section.settings.mega_image %}
+                          <img src="{{ section.settings.mega_image | img_url: 'master' }}">
+                        {% endif %}
                       </div>
+                      
                     </details>
                   </header-menu>
+                  
                 {%- else -%}
                   <a href="{{ link.url }}" class="header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
@@ -519,6 +596,7 @@
               </li>
             {%- endfor -%}
           </ul>
+        
         </nav>
       {%- endif -%}
     {%- endif -%}
@@ -822,7 +900,46 @@
     }
   </script>
 {%- endif -%}
-
+<script>
+    function jackMousein(x){
+        let nodd = x.parentElement;
+        nodd.setAttribute('megaopen', true)
+    }
+    function jackMouseout(x){
+        let  nodd = x.parentElement;
+        nodd.removeAttribute('megaopen')
+    }
+    let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+    items.forEach(item => {
+        
+        item.addEventListener("mouseover", () => {
+            item.setAttribute("open", true);
+            item.querySelector("ul").addEventListener("mouseleave", () => {
+                setTimeout(function(){
+                    if(item.hasAttribute('megaopen')){
+                        item.setAttribute("open", true);
+                    }
+                    else{
+                        
+                        item.removeAttribute("open");
+                    }
+                }, 500);
+            });
+            item.addEventListener("mouseleave", () => {
+                
+                setTimeout(function(){
+                    if(item.hasAttribute('megaopen')){
+                        item.setAttribute("open", true); 
+                    }
+                    else{
+                        
+                        item.removeAttribute("open");
+                    }
+                }, 100);
+            });
+        }); 
+    });
+</script>
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -934,6 +1051,11 @@
       ],
       "default": "on-scroll-up",
       "label": "t:sections.header.settings.sticky_header_type.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "mega_image",
+      "label": "Mega menu image"
     },
     {
       "type": "checkbox",
