@@ -29,12 +29,17 @@
         "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-heading-1",
         "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-text-1"
       ],
+      "custom_css": [
+        "h1 {font-size: 25px; font-weight: 700;}",
+        "p {font-size: 14px; color: #000; letter-spacing: 0;}",
+        ".rich-text__blocks {max-width: 979px;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 20,
         "padding_bottom": 52
       }
     },
