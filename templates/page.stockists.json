@@ -2,13 +2,147 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "9c9493e1-f3f6-4fcb-97a3-6908b92d3593": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>STOCKISTS<\/h1>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nullam iaculis lectus ac fermentum pulvinar. Ut et orci posuere, molestie turpis facilisis, pharetra mauris. Aenean condimentum elit commodo varius tristique sed imperdiet massa ultricies ut. Ut non auctor purus, dictum gravida lacus ex ante porta est, non dictum sem mauris eu elso magna. Nunc sodales lorem nec dui lobortis, vitae lobortis tellus maximus consequat egestas, tortor<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-heading-1",
+        "template--21452814909741__9c9493e1-f3f6-4fcb-97a3-6908b92d3593-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "a9fe20fe-2c1d-47a6-9bda-95dc343aa839": {
+      "type": "collage",
+      "blocks": {
+        "template--21452814909741__a9fe20fe-2c1d-47a6-9bda-95dc343aa839-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_7.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--21452814909741__a9fe20fe-2c1d-47a6-9bda-95dc343aa839-image-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1d5a16ee-959c-4ab6-ab55-2465614686f2": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Chicago Flagship",
+            "text": "<p>900 North Michigan Avenue<br\/>Chicago, Illinois, 60611,<br\/>United States<br\/>T:+13126645504<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "San Francisco Flagship",
+            "text": "<p>240 Stockton Street<br\/>San Francisco, California, 94108,<br\/>United States<br\/>T:+14153922808<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Beverly Hills Flagship",
+            "text": "<p>347 North Rodeo Drive<br\/>Beverly Hills, California, 90210, United States<br\/>T:+13102783451<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-1",
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-2",
+        "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f7528b8b-fa0e-40b1-b03d-acd9da3e9798": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21452814909741__f7528b8b-fa0e-40b1-b03d-acd9da3e9798-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are partnering with new stores every month, so stay tuned for updates!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21452814909741__f7528b8b-fa0e-40b1-b03d-acd9da3e9798-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "9c9493e1-f3f6-4fcb-97a3-6908b92d3593",
+    "a9fe20fe-2c1d-47a6-9bda-95dc343aa839",
+    "1d5a16ee-959c-4ab6-ab55-2465614686f2",
+    "f7528b8b-fa0e-40b1-b03d-acd9da3e9798"
   ]
 }
