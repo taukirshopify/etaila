@@ -77,7 +77,7 @@
           "type": "column",
           "settings": {
             "title": "Chicago Flagship",
-            "text": "<p>900 North Michigan Avenue<br\/>Chicago, Illinois, 60611,<br\/>United States<br\/>T:+13126645504<\/p>",
+            "text": "<p><a href=\"https:\/\/maps.app.goo.gl\/SHKasuhPy68jqL3b6\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/SHKasuhPy68jqL3b6\">900 North Michigan Avenue<br\/>Chicago, Illinois, 60611,<br\/>United States<\/a><br\/><a href=\"tel:+13126645504\" title=\"tel:+13126645504\">T:+13126645504<\/a><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -86,7 +86,7 @@
           "type": "column",
           "settings": {
             "title": "San Francisco Flagship",
-            "text": "<p>240 Stockton Street<br\/>San Francisco, California, 94108,<br\/>United States<br\/>T:+14153922808<\/p>",
+            "text": "<p><a href=\"https:\/\/maps.app.goo.gl\/u8DbmzUHhw1Mi5NTA\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/u8DbmzUHhw1Mi5NTA\">240 Stockton Street<br\/>San Francisco, California, 94108,<br\/>United States<\/a><br\/><a href=\"tel:+14153922808\" title=\"tel:+14153922808\">T:+14153922808<\/a><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -95,7 +95,7 @@
           "type": "column",
           "settings": {
             "title": "Beverly Hills Flagship",
-            "text": "<p>347 North Rodeo Drive<br\/>Beverly Hills, California, 90210, United States<br\/>T:+13102783451<\/p>",
+            "text": "<p><a href=\"https:\/\/maps.app.goo.gl\/cSd9iq6nDg5dpN2aA\" target=\"_blank\" title=\"https:\/\/maps.app.goo.gl\/cSd9iq6nDg5dpN2aA\">347 North Rodeo Drive<br\/>Beverly Hills, California, 90210, United States<\/a><br\/><a href=\"tel:+13102783451\" title=\"tel:+13102783451\">T:+13102783451<\/a><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -105,6 +105,10 @@
         "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-1",
         "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-2",
         "template--21452814909741__1d5a16ee-959c-4ab6-ab55-2465614686f2-column-3"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 600; letter-spacing: 0;}",
+        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
       ],
       "settings": {
         "title": "",
@@ -135,6 +139,9 @@
       },
       "block_order": [
         "template--21452814909741__f7528b8b-fa0e-40b1-b03d-acd9da3e9798-text-1"
+      ],
+      "custom_css": [
+        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
       ],
       "settings": {
         "desktop_content_position": "center",
