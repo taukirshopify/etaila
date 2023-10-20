@@ -26,6 +26,43 @@ img.gallery-img {
     display: flex;
     gap: 14px;
 }
+  /* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.filter-list li {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.filter-list li:hover {
+    background-color: #ddd;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
 {% endstyle %}
 <div class="gallery-section">
   <div class="page-width">
@@ -36,16 +73,17 @@ img.gallery-img {
       
       <div class="filter-by">
         Filter by:
-        <ul class="filter-list">
-          <li>All</li>
-          <li>Shirts</li>
-          <li>Bottoms</li>
-          <li>Outerwear</li>
-          <li>Denim</li>
-        </ul>
-
+        <div class="dropdown">
+          <button class="dropbtn">Choose a filter</button>
+          <ul class="filter-list">
+              <li>All</li>
+              <li>Shirts</li>
+              <li>Bottoms</li>
+              <li>Outerwear</li>
+              <li>Denim</li>
+          </ul>
+        </div>
       </div>
-
     </div>
     <div class="gallery-body">
       {% for block in section.blocks %}
@@ -57,19 +95,33 @@ img.gallery-img {
   </div>
 </div>
 <script>
-  $(document).ready(function(){
-      $(".filter-list li").on("click", function() {
-          let filterValue = $(this).text().toLowerCase(); // Get the filter value
-  
-          if(filterValue === "all") { // If the user clicked on "All"
-              $(".gallery-img").removeClass("hide"); // Show all images
-              return; 
-          }
-  
-          $(".gallery-img").addClass("hide"); // First hide all images
-          $("img.gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
-      });
-  });
+$(document).ready(function(){
+    $(".dropbtn").on("click", function() {
+        $(".filter-list").toggle(); // Toggle show/hide for the list
+    });
+
+    $(".filter-list li").on("click", function() {
+        let filterValue = $(this).text().toLowerCase(); // Get the filter value
+
+        $(".dropbtn").text("Filter by: " + $(this).text()); // Change the button text to the selected filter
+
+        if(filterValue === "all") { 
+            $("img").removeClass("hide");
+            return; 
+        }
+
+        $("img").addClass("hide");
+        $("img." + filterValue).removeClass("hide");
+    });
+    
+    // Hide the dropdown if clicked outside
+    $(document).on("click", function(event) {
+        if (!$(event.target).closest(".dropdown").length) {
+            $(".filter-list").hide();
+        }
+    });
+});
+
 </script>
 {% schema %}
   {
