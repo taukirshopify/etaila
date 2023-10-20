@@ -39,7 +39,7 @@ img.gallery-img {
     </div>
     <div class="gallery-body">
       {% for block in section.blocks %}
-        <img src="{{ block.settings.image | img_url: 'master' }}" class="gallery-img {% if block.settings.shirts %} shirts {% endif %} {% if block.settings.bottoms %} bottoms {% endif %} {% if block.settings.outerwear %} outerwear {% endif %} {% if block.settings.denim %} denim {% endif %}">
+        <img src="{{ block.settings.image | img_url: 'master' }}" class="gallery-img{% if block.settings.shirts %} shirts {% endif %}{% if block.settings.bottoms %}bottoms{% endif %}{% if block.settings.outerwear %} outerwear {% endif %}{% if block.settings.denim %} denim {% endif %}">
 
       {% endfor %}
     </div>
