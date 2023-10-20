@@ -140,16 +140,25 @@ $(document).ready(function(){
     $(".filter-list li").on("click", function() {
         let filterValue = $(this).text().toLowerCase(); // Get the filter value
 
-        $(".dropbtn").text($(this).text()); // Change the button text to the clicked li's text
+        // Update the button text
+        $(".dropbtn").text($(this).text()); 
 
+        // Update the gallery title
         if(filterValue === "all") { 
-            $(".gallery-img").removeClass("hide"); // Show all gallery images
+            $(".gallery-title").text("Gallery"); // If 'All' is selected, just show 'Gallery'
         } else {
-            $(".gallery-img").addClass("hide"); // First hide all gallery images
-            $(".gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
+            $(".gallery-title").text("Gallery - " + $(this).text()); // If any specific filter is selected, show 'Gallery - FilterName'
+        }
+
+        // Apply filter on images
+        if(filterValue === "all") { 
+            $(".gallery-img").removeClass("hide");
+        } else {
+            $(".gallery-img").addClass("hide");
+            $(".gallery-img." + filterValue).removeClass("hide");
         }
         
-        // Hide the dropdown after any selection including "All"
+        // Hide the dropdown after any selection
         $(".filter-list").hide();
     });
     
