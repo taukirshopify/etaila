@@ -74,7 +74,7 @@ img.gallery-img {
       <div class="filter-by">
         Filter by:
         <div class="dropdown">
-          <button class="dropbtn">Choose a filter</button>
+          <button class="dropbtn">All</button>
           <ul class="filter-list">
               <li>All</li>
               <li>Shirts</li>
@@ -103,15 +103,18 @@ $(document).ready(function(){
     $(".filter-list li").on("click", function() {
         let filterValue = $(this).text().toLowerCase(); // Get the filter value
 
-        $(".dropbtn").text("Filter by: " + $(this).text()); // Change the button text to the selected filter
+        $(".dropbtn").text($(this).text()); // Change the button text to the clicked li's text
 
         if(filterValue === "all") { 
-            $(".gallery-img").removeClass("hide");
+            $(".gallery-img").removeClass("hide"); // Show all gallery images
             return; 
         }
 
-        $(".gallery-img").addClass("hide");
-        $("img.gallery-img." + filterValue).removeClass("hide");
+        $(".gallery-img").addClass("hide"); // First hide all gallery images
+        $(".gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
+        
+        // Hide the dropdown after selection
+        $(".filter-list").hide();
     });
     
     // Hide the dropdown if clicked outside
