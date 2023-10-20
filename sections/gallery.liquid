@@ -57,7 +57,7 @@ img.gallery-img {
           }
   
           $(".gallery-img").addClass("hide"); // First hide all images
-          $("img.gallery-img" + filterValue).removeClass("hide"); // Then show only the images that match the filter
+          $("img.gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
       });
   });
 </script>
