@@ -159,9 +159,9 @@ $(document).ready(function(){
 
         // Update the gallery title
         if(filterValue === "all") { 
-            $(".gallery-title").text("Gallery"); // If 'All' is selected, just show 'Gallery'
+            $(".gallery-title").text("{{ section.settings.heading }}"); // If 'All' is selected, just show 'Gallery'
         } else {
-            $(".gallery-title").text("Gallery - " + $(this).text()); // If any specific filter is selected, show 'Gallery - FilterName'
+            $(".gallery-title").text("{{ section.settings.heading }} - " + $(this).text()); // If any specific filter is selected, show 'Gallery - FilterName'
         }
 
         // Apply filter on images
