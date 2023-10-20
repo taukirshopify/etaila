@@ -106,12 +106,12 @@ $(document).ready(function(){
         $(".dropbtn").text("Filter by: " + $(this).text()); // Change the button text to the selected filter
 
         if(filterValue === "all") { 
-            $("img").removeClass("hide");
+            $(".gallery-img").removeClass("hide");
             return; 
         }
 
-        $("img").addClass("hide");
-        $("img." + filterValue).removeClass("hide");
+        $(".gallery-img").addClass("hide");
+        $("img.gallery-img." + filterValue).removeClass("hide");
     });
     
     // Hide the dropdown if clicked outside
