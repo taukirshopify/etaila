@@ -53,7 +53,8 @@
         "template--21458954682669__27db55e9-3c3e-48e6-8329-f1dc13911f37-text-1"
       ],
       "custom_css": [
-        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
+        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}",
+        ".rich-text__blocks {max-width: 100%;}"
       ],
       "settings": {
         "desktop_content_position": "center",
