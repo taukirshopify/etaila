@@ -27,7 +27,8 @@
         ".image-with-text__content {padding-right: 0;}",
         "h3 {font-weight: 600; margin: 40px 0 30px; letter-spacing: 0;}",
         "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}",
-        "@media (max-width: 768px) {h1 {font-size: 28px;}}"
+        "@media (max-width: 768px) {h1 {font-size: 28px; }}",
+        "@media (max-width: 749px) {.image-with-text__content {padding: 40px 0 0;}}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about.jpg",
