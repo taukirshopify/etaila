@@ -22,6 +22,9 @@
       "block_order": [
         "template--21458954682669__f4dd2469-09e5-4c11-b904-09528e53e4e6-text-1"
       ],
+      "custom_css": [
+        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about.jpg",
         "height": "adapt",
@@ -48,6 +51,9 @@
       },
       "block_order": [
         "template--21458954682669__27db55e9-3c3e-48e6-8329-f1dc13911f37-text-1"
+      ],
+      "custom_css": [
+        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
       ],
       "settings": {
         "desktop_content_position": "center",
