@@ -2,13 +2,66 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "f4dd2469-09e5-4c11-b904-09528e53e4e6": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21458954682669__f4dd2469-09e5-4c11-b904-09528e53e4e6-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Fueled by passion of the community Vestibulum vel<\/h1><h3>ABOUT THE FOUNDER<\/h3><p>Nullam iaculis lectus ac fermentum pulvinar. Ut et orci posuere, molestie turpis facilisis, pharetra mauris. Aenean condimentum elit commodo varius tristique sed imperdiet massa ultricies ut. Ut non auctor purus, dictum gravida lacus ex ante porta est, non dictum sem mauris eu elso magna. Nunc sodales lorem nec dui lobortis, vitae lobortis tellus maximus consequat egestas, tortor<\/p><h3>OUR HISTORY<\/h3><p>Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21458954682669__f4dd2469-09e5-4c11-b904-09528e53e4e6-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "27db55e9-3c3e-48e6-8329-f1dc13911f37": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21458954682669__27db55e9-3c3e-48e6-8329-f1dc13911f37-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo. Nullam iaculis lectus ac fermentum pulvinar. Ut et orci posuere, molestie turpis facilisis, pharetra mauris.<br\/><br\/>Aenean condimentum elit commodo varius tristique sed imperdiet massa ultricies ut. Ut non auctor purus, dictum gravida lacus ex ante porta est, non dictum sem mauris eu elso magna. Nunc sodales lorem nec dui lobortis, vitae lobortis tellus maximus consequat egestas, tortor. Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21458954682669__27db55e9-3c3e-48e6-8329-f1dc13911f37-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "f4dd2469-09e5-4c11-b904-09528e53e4e6",
+    "27db55e9-3c3e-48e6-8329-f1dc13911f37"
   ]
 }
