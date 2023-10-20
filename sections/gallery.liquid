@@ -9,6 +9,48 @@
         "default": "Gallery",
         "label": "Heading"
       }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "checkbox",
+            "id": "shirts",
+            "default": false,
+            "label": "Shirts"
+          },
+          {
+            "type": "checkbox",
+            "id": "bottoms",
+            "default": false,
+            "label": "Bottoms"
+          },
+          {
+            "type": "checkbox",
+            "id": "outerwear",
+            "default": false,
+            "label": "Outerwear"
+          },
+          {
+            "type": "checkbox",
+            "id": "denim",
+            "default": false,
+            "label": "Denim"
+          }
+        ]
+      }
+      ],
+    "presets": [
+      {
+        "name": "Gallery"
+      }
     ]
   }
 {% endschema %}
