@@ -6,69 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "0265396f-55bb-4f26-8bb9-59854d014a31": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18087977877805__0265396f-55bb-4f26-8bb9-59854d014a31-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<h1>Fueled by passion of the community Vestibulum vel<\/h1><h3>ABOUT THE FOUNDER<\/h3><p>Nullam iaculis lectus ac fermentum pulvinar. Ut et orci posuere, molestie turpis facilisis, pharetra mauris. Aenean condimentum elit commodo varius tristique sed imperdiet massa ultricies ut. Ut non auctor purus, dictum gravida lacus ex ante porta est, non dictum sem mauris eu elso magna. Nunc sodales lorem nec dui lobortis, vitae lobortis tellus maximus consequat egestas, tortor<\/p><h3>OUR HISTORY<\/h3><p>Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--18087977877805__0265396f-55bb-4f26-8bb9-59854d014a31-text-1"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/about.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "63e65efa-911e-430c-b9b4-6eaa0a8484e4": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18087977877805__63e65efa-911e-430c-b9b4-6eaa0a8484e4-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo. Nullam iaculis lectus ac fermentum pulvinar. Ut et orci posuere, molestie turpis facilisis, pharetra mauris.<br\/><br\/>Aenean condimentum elit commodo varius tristique sed imperdiet massa ultricies ut. Ut non auctor purus, dictum gravida lacus ex ante porta est, non dictum sem mauris eu elso magna. Nunc sodales lorem nec dui lobortis, vitae lobortis tellus maximus consequat egestas, tortor. Donec mattis eros quis mi vulputate suscipit. Duis tempor, dolor sed ultricies pellentesque, neque felis fermentum nisl, id fringilla ligula sapien id erat. Pellentesque vitae ante ac erat fermentum commodo nec non purus. Nulla a faucibus metus. Nulla euismod eros a lacus consequat dictum. Maecenas justo velit, eleifend a luctus at, dictum et ipsum. Nullam bibendum porta orci, finibus condimentum massa commodo.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18087977877805__63e65efa-911e-430c-b9b4-6eaa0a8484e4-text-1"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "p {font-size: 14px; letter-spacing: 0; color: #000; line-height: 1.7em;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "main",
-    "0265396f-55bb-4f26-8bb9-59854d014a31",
-    "63e65efa-911e-430c-b9b4-6eaa0a8484e4"
+    "main"
   ]
 }
