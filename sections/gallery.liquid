@@ -52,12 +52,12 @@ img.gallery-img {
           let filterValue = $(this).text().toLowerCase(); // Get the filter value
   
           if(filterValue === "all") { // If the user clicked on "All"
-              $("img").removeClass("hide"); // Show all images
+              $(".gallery-img").removeClass("hide"); // Show all images
               return; 
           }
   
-          $("img").addClass("hide"); // First hide all images
-          $("img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
+          $(".gallery-img").addClass("hide"); // First hide all images
+          $("img.gallery-img" + filterValue).removeClass("hide"); // Then show only the images that match the filter
       });
   });
 </script>
