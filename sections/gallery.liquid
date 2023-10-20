@@ -11,7 +11,10 @@
 
     </div>
     <div class="gallery-body">
+      {% for block in section.blocks %}
+        <img src="{{ block.settings.image | img_url: 'master' }}" class="gallery-img">
 
+      {% endfor %}
     </div>
 
   </div>
