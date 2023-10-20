@@ -27,7 +27,7 @@
             "image": "shopify:\/\/shop_images\/5Z1A0603_2.jpg",
             "shirts": true,
             "bottoms": true,
-            "outerwear": false,
+            "outerwear": true,
             "denim": false
           }
         },
