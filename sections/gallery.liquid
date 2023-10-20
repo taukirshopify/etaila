@@ -107,13 +107,12 @@ $(document).ready(function(){
 
         if(filterValue === "all") { 
             $(".gallery-img").removeClass("hide"); // Show all gallery images
-            return; 
+        } else {
+            $(".gallery-img").addClass("hide"); // First hide all gallery images
+            $(".gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
         }
-
-        $(".gallery-img").addClass("hide"); // First hide all gallery images
-        $(".gallery-img." + filterValue).removeClass("hide"); // Then show only the images that match the filter
         
-        // Hide the dropdown after selection
+        // Hide the dropdown after any selection including "All"
         $(".filter-list").hide();
     });
     
