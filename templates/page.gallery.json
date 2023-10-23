@@ -170,6 +170,26 @@
             "outerwear": false,
             "denim": false
           }
+        },
+        "31e1ba33-d27d-4f4e-a943-68109bceb251": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A9735.jpg",
+            "shirts": false,
+            "bottoms": true,
+            "outerwear": false,
+            "denim": false
+          }
+        },
+        "94f500a2-103e-4cc2-9e9c-81c637b86a82": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A9586.jpg",
+            "shirts": true,
+            "bottoms": false,
+            "outerwear": false,
+            "denim": false
+          }
         }
       },
       "block_order": [
@@ -188,7 +208,9 @@
         "eb5ec0f8-b0ff-4932-8d2e-24abdd0041b9",
         "0d7b1a97-0122-4a7b-8f9d-1201cd3e112b",
         "5d84a243-f68c-491b-8b7d-66b61be25829",
-        "2d4d0b5e-ac07-47cd-bd6c-7221f5cc5b9d"
+        "2d4d0b5e-ac07-47cd-bd6c-7221f5cc5b9d",
+        "31e1ba33-d27d-4f4e-a943-68109bceb251",
+        "94f500a2-103e-4cc2-9e9c-81c637b86a82"
       ],
       "settings": {
         "heading": "Gallery"
