@@ -531,11 +531,12 @@
         "0fbb9f44-d8b1-44ce-8653-176d788bc9d6": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A3030.jpg",
             "shirts": false,
             "bottoms": false,
-            "outerwear": false,
+            "outerwear": true,
             "denim": false,
-            "accessories": false
+            "accessories": true
           }
         }
       },
