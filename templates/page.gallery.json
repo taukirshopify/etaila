@@ -18,7 +18,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "d16354ef-a67f-4da5-8686-088454688c64": {
@@ -28,7 +29,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "d35cbdde-5857-431e-9a9e-3a2f6d999d5b": {
@@ -38,7 +40,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "cc38f3ff-5c62-4813-a1da-cd1a28c86b89": {
@@ -48,7 +51,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "9f8b1967-8c52-4376-9f3c-ec4ad1237054": {
@@ -58,7 +62,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "5bed97ce-dcc2-4254-a6a0-a17e23277b65": {
@@ -68,7 +73,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": true
+            "denim": true,
+            "accessories": false
           }
         },
         "4ca0fdd4-5262-4044-a2b8-3602e2fe1904": {
@@ -78,7 +84,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "87659095-a1b5-462d-b2cf-db023325625a": {
@@ -88,7 +95,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "9a8ca1f2-9c18-4217-aa54-1b158920e726": {
@@ -98,7 +106,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "814e927f-6629-4bee-a7e0-353caaad081e": {
@@ -108,7 +117,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "9852cb09-b0a3-4cc7-a168-0e32be00039f": {
@@ -118,7 +128,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "22c685f1-cfca-4704-9932-967349cfe661": {
@@ -128,7 +139,8 @@
             "shirts": true,
             "bottoms": false,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "eb5ec0f8-b0ff-4932-8d2e-24abdd0041b9": {
@@ -138,7 +150,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "0d7b1a97-0122-4a7b-8f9d-1201cd3e112b": {
@@ -148,7 +161,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "5d84a243-f68c-491b-8b7d-66b61be25829": {
@@ -158,7 +172,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "2d4d0b5e-ac07-47cd-bd6c-7221f5cc5b9d": {
@@ -168,7 +183,8 @@
             "shirts": true,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "31e1ba33-d27d-4f4e-a943-68109bceb251": {
@@ -178,7 +194,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "94f500a2-103e-4cc2-9e9c-81c637b86a82": {
@@ -188,7 +205,8 @@
             "shirts": true,
             "bottoms": false,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "09baf0c3-6239-4b0a-9fd4-24a28cdee045": {
@@ -198,7 +216,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "7632e74b-8056-4a19-a10e-b81935a2aa10": {
@@ -208,7 +227,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "95596f8a-8570-41c5-98ce-2f4b563c42eb": {
@@ -218,7 +238,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "231a75cd-8a2e-4297-8583-2e3d4928e2ef": {
@@ -228,7 +249,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "512e7077-4b78-4564-852d-c188e6599208": {
@@ -238,7 +260,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "f9c5a1fe-0baa-4a64-bc21-60505b567f50": {
@@ -248,7 +271,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "988ee6e7-5eef-46a8-8ce7-241251562b06": {
@@ -258,7 +282,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "a8dc5c41-ec14-4c1a-b3cf-925be2640103": {
@@ -268,7 +293,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "58e22c55-5cd8-4d9d-af75-30043ff9a14a": {
@@ -278,7 +304,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "5492480c-8086-4081-88bc-39fc38519aa0": {
@@ -288,7 +315,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "64c59b6e-7676-4db7-ae7a-c7d954ce83d6": {
@@ -298,7 +326,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "4f6769b6-d822-43df-ac1d-0b237ca5b0b8": {
@@ -308,7 +337,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "81d65aa0-538b-4b66-b931-d67a94ce1ba3": {
@@ -318,7 +348,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "4e6232b0-f8d7-49f0-9f07-715eeeb2ea4a": {
@@ -328,7 +359,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": false
           }
         },
         "97917b07-25bb-4527-974b-a860ef72fdd7": {
@@ -338,7 +370,8 @@
             "shirts": false,
             "bottoms": true,
             "outerwear": false,
-            "denim": false
+            "denim": false,
+            "accessories": true
           }
         }
       },
