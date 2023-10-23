@@ -509,11 +509,12 @@
         "503a49ab-05a8-4e29-bf8f-10a6b2876132": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A3080_26e9c858-f0dd-49e1-926a-62df223aab82.jpg",
             "shirts": false,
-            "bottoms": false,
-            "outerwear": false,
+            "bottoms": true,
+            "outerwear": true,
             "denim": false,
-            "accessories": false
+            "accessories": true
           }
         },
         "cdd11a4e-3541-4ebf-8686-71d8dc65f980": {
