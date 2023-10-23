@@ -320,6 +320,16 @@
             "outerwear": false,
             "denim": false
           }
+        },
+        "4e6232b0-f8d7-49f0-9f07-715eeeb2ea4a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A7282.jpg",
+            "shirts": false,
+            "bottoms": true,
+            "outerwear": false,
+            "denim": false
+          }
         }
       },
       "block_order": [
@@ -353,7 +363,8 @@
         "5492480c-8086-4081-88bc-39fc38519aa0",
         "64c59b6e-7676-4db7-ae7a-c7d954ce83d6",
         "4f6769b6-d822-43df-ac1d-0b237ca5b0b8",
-        "81d65aa0-538b-4b66-b931-d67a94ce1ba3"
+        "81d65aa0-538b-4b66-b931-d67a94ce1ba3",
+        "4e6232b0-f8d7-49f0-9f07-715eeeb2ea4a"
       ],
       "settings": {
         "heading": "Gallery"
