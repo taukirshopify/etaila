@@ -33,28 +33,6 @@
             "accessories": false
           }
         },
-        "d35cbdde-5857-431e-9a9e-3a2f6d999d5b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A6164_2.jpg",
-            "shirts": false,
-            "bottoms": true,
-            "outerwear": false,
-            "denim": true,
-            "accessories": false
-          }
-        },
-        "cc38f3ff-5c62-4813-a1da-cd1a28c86b89": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A6178.jpg",
-            "shirts": false,
-            "bottoms": true,
-            "outerwear": false,
-            "denim": true,
-            "accessories": false
-          }
-        },
         "9f8b1967-8c52-4376-9f3c-ec4ad1237054": {
           "type": "image",
           "settings": {
@@ -99,28 +77,6 @@
             "accessories": false
           }
         },
-        "9a8ca1f2-9c18-4217-aa54-1b158920e726": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A0603_2.jpg",
-            "shirts": true,
-            "bottoms": true,
-            "outerwear": false,
-            "denim": false,
-            "accessories": false
-          }
-        },
-        "814e927f-6629-4bee-a7e0-353caaad081e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A0710.jpg",
-            "shirts": true,
-            "bottoms": true,
-            "outerwear": false,
-            "denim": false,
-            "accessories": false
-          }
-        },
         "9852cb09-b0a3-4cc7-a168-0e32be00039f": {
           "type": "image",
           "settings": {
@@ -138,28 +94,6 @@
             "image": "shopify:\/\/shop_images\/5Z1A9564.jpg",
             "shirts": true,
             "bottoms": false,
-            "outerwear": false,
-            "denim": false,
-            "accessories": false
-          }
-        },
-        "eb5ec0f8-b0ff-4932-8d2e-24abdd0041b9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A9379.jpg",
-            "shirts": true,
-            "bottoms": true,
-            "outerwear": false,
-            "denim": false,
-            "accessories": false
-          }
-        },
-        "0d7b1a97-0122-4a7b-8f9d-1201cd3e112b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5Z1A9660.jpg",
-            "shirts": true,
-            "bottoms": true,
             "outerwear": false,
             "denim": false,
             "accessories": false
@@ -560,23 +494,28 @@
             "denim": false,
             "accessories": false
           }
+        },
+        "cbf7b319-6129-42d7-bb5d-db9745f2ccbc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A3376.jpg",
+            "shirts": false,
+            "bottoms": true,
+            "outerwear": true,
+            "denim": false,
+            "accessories": true
+          }
         }
       },
       "block_order": [
         "f4b02ba6-e46d-4007-b5dd-fe0c1f20a8fa",
         "d16354ef-a67f-4da5-8686-088454688c64",
-        "d35cbdde-5857-431e-9a9e-3a2f6d999d5b",
-        "cc38f3ff-5c62-4813-a1da-cd1a28c86b89",
         "9f8b1967-8c52-4376-9f3c-ec4ad1237054",
         "5bed97ce-dcc2-4254-a6a0-a17e23277b65",
         "4ca0fdd4-5262-4044-a2b8-3602e2fe1904",
         "87659095-a1b5-462d-b2cf-db023325625a",
-        "9a8ca1f2-9c18-4217-aa54-1b158920e726",
-        "814e927f-6629-4bee-a7e0-353caaad081e",
         "9852cb09-b0a3-4cc7-a168-0e32be00039f",
         "22c685f1-cfca-4704-9932-967349cfe661",
-        "eb5ec0f8-b0ff-4932-8d2e-24abdd0041b9",
-        "0d7b1a97-0122-4a7b-8f9d-1201cd3e112b",
         "5d84a243-f68c-491b-8b7d-66b61be25829",
         "2d4d0b5e-ac07-47cd-bd6c-7221f5cc5b9d",
         "31e1ba33-d27d-4f4e-a943-68109bceb251",
@@ -612,7 +551,8 @@
         "cdd11a4e-3541-4ebf-8686-71d8dc65f980",
         "0fbb9f44-d8b1-44ce-8653-176d788bc9d6",
         "a6623d75-8bea-4ff5-a5b8-e87058eec1ab",
-        "174f315f-1f61-4fa6-b756-c9dea9d99a8c"
+        "174f315f-1f61-4fa6-b756-c9dea9d99a8c",
+        "cbf7b319-6129-42d7-bb5d-db9745f2ccbc"
       ],
       "settings": {
         "heading": "Gallery"
