@@ -51,6 +51,26 @@
             "denim": true
           }
         },
+        "9f8b1967-8c52-4376-9f3c-ec4ad1237054": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A6054.jpg",
+            "shirts": false,
+            "bottoms": true,
+            "outerwear": false,
+            "denim": true
+          }
+        },
+        "5bed97ce-dcc2-4254-a6a0-a17e23277b65": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A5990.jpg",
+            "shirts": false,
+            "bottoms": true,
+            "outerwear": false,
+            "denim": true
+          }
+        },
         "87659095-a1b5-462d-b2cf-db023325625a": {
           "type": "image",
           "settings": {
@@ -67,7 +87,7 @@
             "image": "shopify:\/\/shop_images\/5Z1A0603_2.jpg",
             "shirts": true,
             "bottoms": true,
-            "outerwear": true,
+            "outerwear": false,
             "denim": false
           }
         }
@@ -77,6 +97,8 @@
         "d16354ef-a67f-4da5-8686-088454688c64",
         "d35cbdde-5857-431e-9a9e-3a2f6d999d5b",
         "cc38f3ff-5c62-4813-a1da-cd1a28c86b89",
+        "9f8b1967-8c52-4376-9f3c-ec4ad1237054",
+        "5bed97ce-dcc2-4254-a6a0-a17e23277b65",
         "87659095-a1b5-462d-b2cf-db023325625a",
         "9a8ca1f2-9c18-4217-aa54-1b158920e726"
       ],
