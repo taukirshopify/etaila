@@ -531,16 +531,18 @@
         "8eba5d4b-e9aa-4bb5-b6cd-c7d6c47b77ad": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A3216_1e8a7228-0ba4-4953-9a2a-6bc45933239e.jpg",
             "shirts": false,
-            "bottoms": false,
-            "outerwear": false,
+            "bottoms": true,
+            "outerwear": true,
             "denim": false,
-            "accessories": false
+            "accessories": true
           }
         },
         "32cdbfee-cb25-4af1-ac32-021846c319ef": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/5Z1A3411.jpg",
             "shirts": false,
             "bottoms": false,
             "outerwear": false,
