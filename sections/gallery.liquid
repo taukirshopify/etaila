@@ -132,13 +132,14 @@ img.gallery-img {
               <li>Bottoms</li>
               <li>Outerwear</li>
               <li>Denim</li>
+              <li>Accessories</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="gallery-body">
       {% for block in section.blocks %}
-        <img src="{{ block.settings.image | img_url: 'master' }}" class="gallery-img{% if block.settings.shirts %} shirts {% endif %}{% if block.settings.bottoms %} bottoms {% endif %}{% if block.settings.outerwear %} outerwear {% endif %}{% if block.settings.denim %} denim {% endif %}">
+        <img src="{{ block.settings.image | img_url: 'master' }}" class="gallery-img{% if block.settings.shirts %} shirts {% endif %}{% if block.settings.bottoms %} bottoms {% endif %}{% if block.settings.outerwear %} outerwear {% endif %}{% if block.settings.denim %} denim {% endif %}{% if block.settings.denim %} accessories {% endif %}">
 
       {% endfor %}
     </div>
@@ -230,6 +231,12 @@ $(document).ready(function(){
             "id": "denim",
             "default": false,
             "label": "Denim"
+          },
+          {
+            "type": "checkbox",
+            "id": "accessories",
+            "default": false,
+            "label": "Accessories"
           }
         ]
       }
