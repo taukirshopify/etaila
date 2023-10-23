@@ -105,8 +105,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/5Z1A0710.jpg",
-            "shirts": false,
-            "bottoms": false,
+            "shirts": true,
+            "bottoms": true,
             "outerwear": false,
             "denim": false
           }
