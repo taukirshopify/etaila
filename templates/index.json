@@ -2,6 +2,7 @@
   "sections": {
     "058b2f9f-77c3-435f-ba1c-0c693bb9d9a1": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -39,7 +40,6 @@
       "block_order": [
         "00cbf1ba-e8e6-4b8c-94be-b65ebd577c0c"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
