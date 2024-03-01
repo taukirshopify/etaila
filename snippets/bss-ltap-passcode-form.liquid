@@ -813,7 +813,7 @@
         customerId: customerId,
         ruleId: "{{ origin_rule_id }}",
         passcodeList: passcodeList,
-        caseSensitive: "{{ passcode_case_sensitive }}"
+        caseSensitive: "{{ passcode_case_sensitive }}",
       });
   
       fetch("{{ save_usage_history }}", {
