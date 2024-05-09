@@ -4,7 +4,7 @@
 {% assign isHideProductPrice = false %}
 {% assign isApplyProduct = false %}
 
-{% unless content_for_header contains "Shopify.designMode" or content_for_header contains "previewBarInjector.init()" %}
+{% unless request.design_mode or request.visual_preview_mode %}
     {% for collection in product.collections %}
         {% assign collection_id = collection.id | split: ',' %}
         {% assign delimeter = "|" | split: ',' %}

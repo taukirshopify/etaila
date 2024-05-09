@@ -224,27 +224,27 @@
               <form id="bsscommerce-ltap-password" class="cart" novalidate style="display: flex">
                   <div class="bss-password-form-wrapper" style="display: flex; flex: 1; align-items: center; border: 1px solid #ccc; border-radius: 5px; margin-right: 6px; background-color: #fff">
                       <input
-                              type="password"
-                              value=""
-                              name="attributes[{{ passAttrName }}]"
-                              id="bsscommerce-password"
-                              class="input-full"
-                              style="
-                                  width: 100%;
-                                  padding: 8px 0 8px 10px;
-                                  font-size: 14px;
-                                  border-radius: 5px;
-                                  border: none;
-                                  margin-right: 5px;
-                                  box-shadow: none;
-                                  outline: none;"
-                              placeholder="
-                                          {%- if input_placeholder_form_submit == "" -%}
-                                              {{ 'general.password_page.login_form_password_placeholder' | t }}
-                                          {%- else -%}
-                                              {{ input_placeholder_form_submit }}
-                                          {%- endif -%}
-                                      "
+                        type="password"
+                        value=""
+                        name="attributes[{{ passAttrName }}]"
+                        id="bsscommerce-password"
+                        class="input-full"
+                        style="
+                          width: 100%;
+                          padding: 8px 0 8px 10px;
+                          font-size: 14px;
+                          border-radius: 5px;
+                          border: none;
+                          margin-right: 5px;
+                          box-shadow: none;
+                          outline: none;"
+                        placeholder="
+                          {%- if input_placeholder_form_submit == "" -%}
+                              {{ 'general.password_page.login_form_password_placeholder' | t }}
+                          {%- else -%}
+                              {{ input_placeholder_form_submit }}
+                          {%- endif -%}
+                        "
                       />
                       <button class="toggle-passcode-input" type="button" style="background-color: transparent; border: none; line-height: 0; padding: 8px; cursor: pointer; fill: #BABEC3">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg>
@@ -327,7 +327,7 @@
                       flex-direction: inherit;
                       row-gap: 6px;
                       column-gap: 6px;
-                      height: 42px;
+                      height: inherit;
                       max-width: 1850px;
                       max-height: 200px;  
                     ">
