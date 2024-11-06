@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "058b2f9f-77c3-435f-ba1c-0c693bb9d9a1": {
@@ -15,8 +15,8 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/5Z1A6079-2.png",
-        "video_url": "https:\/\/youtu.be\/FB26XSWHR88",
+        "cover_image": "shopify://shop_images/5Z1A6079-2.png",
+        "video_url": "https://youtu.be/FB26XSWHR88",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -30,7 +30,7 @@
         "00cbf1ba-e8e6-4b8c-94be-b65ebd577c0c": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/top1.jpg",
+            "image": "shopify://shop_images/ETAI_DAD_HAR_WEB.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
