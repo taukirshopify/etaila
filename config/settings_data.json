@@ -1,12 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "swatchType": "variantImage",
     "swatchStyle": "square",
     "swatchSize": 50,
-    "logo": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
+    "logo": "shopify://shop_images/Asset_1bp-blk.png",
     "logo_width": 110,
-    "favicon": "shopify:\/\/shop_images\/White_and_Black_Favicon-01.png",
-    "Preloder": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
+    "favicon": "shopify://shop_images/White_and_Black_Favicon-01.png",
+    "Preloder": "shopify://shop_images/Asset_1bp-blk.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
@@ -113,13 +122,13 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
-    "brand_image": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
+    "brand_description": "<p></p>",
+    "brand_image": "shopify://shop_images/Asset_1bp-blk.png",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/etai.la\/",
-    "social_instagram_link2": "https:\/\/www.instagram.com\/etai\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@etai-la",
+    "social_instagram_link": "https://www.instagram.com/etai.la/",
+    "social_instagram_link2": "https://www.instagram.com/etai/",
+    "social_youtube_link": "https://www.youtube.com/@etai-la",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -134,7 +143,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Asset_1bp-blk.png",
+    "checkout_logo_image": "shopify://shop_images/Asset_1bp-blk.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_heading_font": "Helvetica Neue",
@@ -155,30 +164,20 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "11944173544948763772": {
-        "type": "shopify:\/\/apps\/b2b-login-lock-hide-price\/blocks\/bss-login\/2f6e9bdf-2dd6-42c6-8d67-58be57506f80",
-        "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14710812113501315912": {
-        "type": "shopify:\/\/apps\/mc-limit-quantity-purchase\/blocks\/app-embed\/143c1e59-4c01-4de6-ad3e-90b86ada592d",
+        "type": "shopify://apps/mc-limit-quantity-purchase/blocks/app-embed/143c1e59-4c01-4de6-ad3e-90b86ada592d",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "9010622670419788200": {
-        "type": "shopify:\/\/apps\/seo-image-optimizer-page-speed\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "type": "shopify://apps/seo-image-optimizer-page-speed/blocks/avada-site-verification/15507c6e-1aa3-45d3-b698-7e175e033440",
         "disabled": false,
         "settings": {
           "google_search_console": "",
@@ -189,10 +188,9 @@
         }
       },
       "3720565183479497137": {
-        "type": "shopify:\/\/apps\/globo-product-options-variant\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "type": "shopify://apps/globo-product-options-variant/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -305,7 +303,7 @@
       "sold_out_badge_color_scheme": "inverse",
       "accent_icons": "text",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
