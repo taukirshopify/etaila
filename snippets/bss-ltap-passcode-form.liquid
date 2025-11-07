@@ -4,8 +4,19 @@
     DO NOT MODIFY. The contents of BSS B2B Login 
     will overwrite any changes in the next update.
 
-    Updated at: Sat Aug 24 2024
+    Updated at: Fri Nov 07 2025
 {% endcomment -%}
+<style>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+div#BsscommercePasswordForm {
+    max-width: 100% !important;
+    margin-bottom: 32px;
+}
+</style>
+
 {% if is_pc_request == "true" %}
 <style>
 .bss-passcode-request:hover {
@@ -190,6 +201,9 @@
   }
 }
 
+
+
+
 /* responsive */
 @media only screen and (min-width: 769px) {
   .modal-dialog__modal {
@@ -258,26 +272,41 @@
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg>
                       </button>
                   </div>
-                      <input id="bsscommerce-password-submit"
-                          style="
-                              background-color: #fff;
-                              color: #333;
-                              border: 1px solid #ccc;
-                              padding: 0 15px;
-                              border-radius: 5px;
-                              cursor: pointer;
-                              font-size: 14px;
-                              font-weight: bold;"
-                          type="submit"
-                          class="btn"
-                          value="
-                              {%- if button_text_form_submit == "" -%}
-                                  {{ 'general.password_page.login_form_submit' | t }}
-                              {%- else -%}
-                                  {{ button_text_form_submit }}
-                              {%- endif -%}
-                          "
-                      />
+                  <button id="bsscommerce-password-submit"
+                    style="
+                        background-color: #fff;
+                        color: #333;
+                        border: 1px solid #ccc;
+                        padding: 0 15px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                        display: flex;          
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 70px;
+                        min-height: 35px;
+                        position: relative;"
+                    type="submit"                      
+                    class="btn">
+                    <div id="bss-spinner" style="
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid #f3f3f3;
+                    border-top: 2px solid #333;
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                    display: none;
+                  "></div>
+                    <span class="button-text">
+                        {%- if button_text_form_submit == "" -%}
+                            {{ 'general.password_page.login_form_submit' | t }}
+                        {%- else -%}
+                            {{ button_text_form_submit }}
+                        {%- endif -%}
+                    </span>
+                    </button>
               </form>
               {% if entered_password %}
                 {%- if entered_password_up_case != password or entered_password_down_case != password -%}
@@ -383,30 +412,45 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg>
                           </button>
                       </div>
-                          <input id="bsscommerce-password-submit"
-                              style="
-                                  color: #333;
-                                  background-color: #fff;
-                                  width: 79.45px;
-                                  max-width: 350px;
-                                  border: 1px solid #ccc;
-                                  max-height: 200px;
-                                  padding: 5px 15px;
-                                  border-radius: 5px;
-                                  cursor: pointer;
-                                  height: 42px;
-                                  font-size: 14px;
-                                  font-weight: bold;"
-                              type="submit"
-                              class="btn"
-                              value="
-                                  {%- if button_text_form_submit == "" -%}
-                                      {{ 'general.password_page.login_form_submit' | t }}
-                                  {%- else -%}
-                                      {{ button_text_form_submit }}
-                                  {%- endif -%}
-                              "
-                          />
+                      <button id="bsscommerce-password-submit"
+                      style="
+                          color: #333;
+                          background-color: #fff;
+                          width: 79.45px;
+                          max-width: 350px;
+                          border: 1px solid #ccc;
+                          max-height: 200px;
+                          padding: 5px 15px;
+                          border-radius: 5px;
+                          cursor: pointer;
+                          height: 42px;
+                          font-size: 14px;
+                          display: flex;
+                          font-weight: bold;
+                          align-items: center;
+                          justify-content: center;
+                          min-width: 70px;
+                          min-height: 35px;
+                          position: relative;"     
+                      type="submit"                      
+                      class="btn">
+                      <div id="bss-spinner" style="
+                      width: 16px;
+                      height: 16px;
+                      border: 2px solid #f3f3f3;
+                      border-top: 2px solid #333;
+                      border-radius: 50%;
+                      animation: spin 1s linear infinite;
+                      display: none;
+                    "></div>
+                      <span class="button-text">
+                          {%- if button_text_form_submit == "" -%}
+                              {{ 'general.password_page.login_form_submit' | t }}
+                          {%- else -%}
+                              {{ button_text_form_submit }}
+                          {%- endif -%}
+                      </span>
+                      </button>
                   </form>
                   <div style="width: 100%;display: flex;justify-content: center;"><div class="loader" style="display:none">...</div></div>
                   {% if entered_password %}
@@ -484,13 +528,35 @@
                                         "/>
                         <div class="text-center">
                             <p>
-                                <input id="bsscommerce-password-submit" type="submit" class="btn" value="
-                                                        {%- if button_text_form_submit == " " -%}
-                                                        {{ 'general.password_page.login_form_submit' | t }}
-                                                    {%- else -%}
-                                                        {{ button_text_form_submit }}
-                                                    {%- endif -%}
-                                                "/>
+                              <button
+                              id="bsscommerce-password-submit"
+                              type="submit"
+                              class="btn"
+                               style="
+                                display: flex;          
+                                align-items: center;
+                                justify-content: center;
+                                min-width: 70px;
+                                min-height: 35px;
+                                position: relative;"   
+                            >
+                              <div id="bss-spinner" style="
+                                width: 16px;
+                                height: 16px;
+                                border: 2px solid #f3f3f3;
+                                border-top: 2px solid #333;
+                                border-radius: 50%;
+                                animation: spin 1s linear infinite;
+                                display: none;
+                              "></div>
+                              <span class="button-text">
+                                {%- if button_text_form_submit == '' -%}
+                                  {{ 'general.password_page.login_form_submit' | t }}
+                                {%- else -%}
+                                  {{ button_text_form_submit }}
+                                {%- endif -%}
+                              </span>
+                            </button>
                             </p>
                         </div>
                     </form>
@@ -610,6 +676,10 @@
     </div>
 </div>
 {% endif %}
+
+{%- capture authentication -%}{"domain":"{{ shop.permanent_domain }}","ruleId":"{{ origin_rule_id }}"}{%- endcapture -%}
+{% assign authentication = authentication | hmac_sha256: '19f28bb46fef8fa41bd7180b12628ee7' %}
+
 <script type="text/javascript">
   {% if is_pc_request == "true" %}
   function isValidEmail(email) {
@@ -631,10 +701,6 @@
   let name = document.querySelector(".field-name");
   let message = document.querySelector(".field-message");
   let emailError = document.querySelector('.message-email');
-
-  //authentication
-  {%- capture authentication -%}{"domain":"{{ shop.permanent_domain }}","ruleId":"{{ origin_rule_id }}"}{%- endcapture -%}
-  {% assign authentication = authentication | hmac_sha256: '19f28bb46fef8fa41bd7180b12628ee7' %}
   
   btn.onclick = function () {
       modal.style.display = "flex";
@@ -770,14 +836,24 @@
   let xmlHttp = new XMLHttpRequest();
 
   // fix for sergio-987 by Xuan Hoang
-  let skipDomains = ["sergio-987.myshopify.com"];
-  if (skipDomains.indexOf(window.Shopify.shop) === -1) {
+  let skipDomainsPC= ["sergio-987.myshopify.com"];
+  if (skipDomainsPC.indexOf(window.Shopify.shop) === -1) {
     xmlHttp.open("post", "/cart/update.js");
     xmlHttp.send(formData);
   }
 
   document.getElementById('bsscommerce-ltap-password').addEventListener('submit', function(e) {
     e.preventDefault();
+
+    const submitBtn = document.getElementById('bsscommerce-password-submit');
+    const buttonText = submitBtn.querySelector('.button-text');
+    const spinner = submitBtn.querySelector('#bss-spinner');
+    
+    if (buttonText && spinner && submitBtn) {
+        buttonText.style.display = 'none';
+        spinner.style.display = 'block';
+        submitBtn.disabled = true;
+    }
 
     let passcodeElement = document.getElementById("bsscommerce-password");
 
@@ -827,16 +903,41 @@
         return dataReq.json()
       }).then((data) =>{
           console.log(data.message)
+          if (submitBtn) submitBtn.disabled = true;
       })
-      .catch((e) =>{ console.log("create usage history failure")});
+      .catch((e) =>{
+        console.log("create usage history failure");
+        if (buttonText) {
+            buttonText.style.display = 'block';
+        }
+        if (spinner) {
+            spinner.style.display = 'none';
+        }
+        if (submitBtn) {
+            submitBtn.disabled = false;
+        }
+      });
+
       let formData = new FormData();
       formData.append(passcodeElement.name, passcodeElement.value);
       let xmlHttp = new XMLHttpRequest();
       xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-          // fix for sergio-987 by Xuan Hoang
-          if (skipDomains.indexOf(window.Shopify.shop) === -1) {
-            skipCacheWhenReloadPage();
+        if (xmlHttp.readyState === 4) {
+          if (xmlHttp.status === 200) {
+            if (submitBtn) submitBtn.disabled = true;
+            if (skipDomainsPC.indexOf(window.Shopify.shop) === -1) {
+              skipCacheWhenReloadPage();
+            }
+          } else {
+            if (buttonText) {
+                buttonText.style.display = 'block';
+            }
+            if (spinner) {
+                spinner.style.display = 'none';
+            }
+            if (submitBtn) {
+                submitBtn.disabled = false;
+            }
           }
         }
       };
@@ -845,7 +946,7 @@
       xmlHttp.send(formData);
 
       // fix for sergio-987 by Xuan Hoang
-      if (skipDomains.indexOf(window.Shopify.shop) !== -1) {
+      if (skipDomainsPC.indexOf(window.Shopify.shop) !== -1) {
         setTimeout(() => {
           window.location.reload();
         }, 1500);
@@ -853,6 +954,15 @@
 
     } else {
       passcodeElement.classList.add("input--error");
+      if (buttonText) {
+          buttonText.style.display = 'block';
+      }
+      if (spinner) {
+          spinner.style.display = 'none';
+      }
+      if (submitBtn) {
+          submitBtn.disabled = false;
+      }
     }
   });
 
