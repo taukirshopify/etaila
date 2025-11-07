@@ -1,7 +1,21 @@
 
+{% assign bss_check_variant = false %}
+{% assign list_variant_restrict = '' | split: ',' %}
+{% capture product_variant %}{% render 'bss-ltap-hv-rules' %}{% endcapture -%}
+{%- unless product_variant contains 'Liquid error' -%}
+  {% assign list_variant_restrict = product_variant | strip | split: ',' %}
+{%- endunless %}
+{% for variant_id in list_variant_restrict %}
+    {% assign variant_id_number = variant_id | plus: 0 %}
+    {% if variant_id_number == product.selected_or_first_available_variant.id %}
+    {% assign bss_check_variant = true %}
+    {% endif %}
+{% endfor %}
+{% comment %}BSS B2B Login{% endcomment %}
+{% capture redirectScript %}{% render 'bsscommerce-redirect-product-page-logic', product: product, collection: collection %}{% endcapture %}{% unless redirectScript contains "Liquid error" %}{%- assign redirectScript = redirectScript | strip | split: ',' -%}{%- if redirectScript[0] != blank -%}<script type="text/javascript" id="hp-behavior">const url = "https://login-to-access-page-api.bsscommerce.com/behavior"; fetch(url, { method: "POST", headers: { "Content-Type": "application/json", }, body: JSON.stringify({domain: window.Shopify.shop, events: "hp-access" })});</script><script id="bss-redirect" type="text/javascript">if ( "{{ routes.root_url }}" != "/" && "{{ redirectScript[0] }}".indexOf("-") === -1) {window.location.replace( "{{ routes.root_url }}" + "{{ redirectScript[0] }}" )} else { window.location.replace("{{ redirectScript[0] }}")}</script>{% endif %}{%- if redirectScript[1] != blank -%}{{ redirectScript[1] }}{% endif -%}{% endunless %}
 {% comment %}BSS B2B Login{% endcomment %}
 {% capture redirectScript %}{% render 'bsscommerce-redirect-product-page-logic', product: product, collection: collection %}{% endcapture %}{% assign redirectScript = redirectScript | strip %}{% unless redirectScript contains "Liquid error" %}{% if redirectScript != "" %} <script type="text/javascript" id="hp-behavior">const url = "https://login-to-access-page-api.bsscommerce.com/behavior"; fetch(url, { method: "POST", headers: { "Content-Type": "application/json", }, body: JSON.stringify({domain: window.Shopify.shop, events: "hp-access" }) });</script><script id="bss-redirect" type="text/javascript">if ( "{{ routes.root_url }}" != "/" && "{{ redirectScript }}".indexOf("-") === -1) {window.location.replace( "{{ routes.root_url }}" + "{{ redirectScript }}" )} else { window.location.replace("{{ redirectScript }}")}</script>{% endif %}{% endunless %}
-{% comment %}BSS B2B Login{% endcomment %}
+
 <section
   id="MainProduct-{{ section.id }}"
   class="page-width section-{{ section.id }}-padding"
@@ -95,12 +109,12 @@
               </div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price',
+                {% unless bss_check_variant %}{%- render 'price',
                   product: product,
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--large'
-                -%}
+                -%}{% else %}<span class="bsscommerce-hv-message">Lock</span>{% endunless %}
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
