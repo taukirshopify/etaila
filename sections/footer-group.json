@@ -21,18 +21,10 @@
             "heading": "Info",
             "menu": "footer"
           }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "RETAIL STORE",
-            "subtext": "<p>8406 Melrose Ave, Los Angeles, CA 90069</p>"
-          }
         }
       },
       "block_order": [
-        "footer-1",
-        "footer-2"
+        "footer-1"
       ],
       "settings": {
         "color_scheme": "background-1",
