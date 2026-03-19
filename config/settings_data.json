@@ -191,6 +191,14 @@
         "type": "shopify://apps/globo-product-options-variant/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
         "settings": {}
+      },
+      "1698709579033073972": {
+        "type": "shopify://apps/shopmark/blocks/app-embed/019a6e89-1d10-799c-bf52-0b33bd0e133c",
+        "disabled": false,
+        "settings": {
+          "enable_swapper": true,
+          "cdn_host": "shopmark-cdn.com"
+        }
       }
     }
   },
