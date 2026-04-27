@@ -194,7 +194,7 @@
       },
       "1698709579033073972": {
         "type": "shopify://apps/shopmark/blocks/app-embed/019a6e89-1d10-799c-bf52-0b33bd0e133c",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "enable_swapper": true,
           "cdn_host": "shopmark-cdn.com"
