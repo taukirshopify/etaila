@@ -4,7 +4,7 @@
     DO NOT MODIFY. The contents of BSS B2B Login 
     will overwrite any changes in the next update.
 
-    Updated at: Fri Nov 07 2025
+    Updated at: Wed Jul 29 2026
 {% endcomment -%}
 {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 {%- assign page_url = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |   replace:'\\/','/' |    replace:'%20',' ' |    replace:'\u0026','&' | replace:'\/', '/'  -%}
@@ -31,3 +31,16 @@
 
 {% include "bss-ltap-disable-registration-page" %}
 
+{% capture bss_lock_style %}
+<style>
+#shopify-section-header [class*="bss-product-lock"],
+header [class*="bss-product-lock"],
+.site-header [class*="bss-product-lock"],
+.header-section [class*="bss-product-lock"],
+.shopify-section-group-header-group [class*="bss-product-lock"] {
+    display: none !important;
+}
+</style>
+{% endcapture %}
+
+{% assign content_for_header = content_for_header | append: bss_lock_style %}
